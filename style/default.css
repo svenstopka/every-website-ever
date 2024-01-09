@@ -1,0 +1,223 @@
+@import url(./montserrat.css);
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+  box-sizing: border-box;
+}
+
+a, a:active, a:visited {
+  text-decoration: none;
+  color: #000000;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.cta, .cta:visited {
+  padding: 10px 20px;
+  background-color: #0A0A0A;
+  color: #FFFFFF;
+  border-radius: 500px;
+  display: block;
+  transition: 125ms;
+  font-weight: bold;
+  text-align: center;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.cta:hover, .cta:visited:hover {
+  color: #000000;
+  background-color: #CFCFCF;
+}
+
+.wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  background-color: #FFFFFF;
+  z-index: 999;
+}
+nav .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+nav .wrapper .navBox, nav .wrapper .loginBox {
+  display: flex;
+  height: 60px;
+  align-items: center;
+}
+nav .wrapper .navBox .navItem, nav .wrapper .navBox .loginItem, nav .wrapper .loginBox .navItem, nav .wrapper .loginBox .loginItem {
+  font-size: 18px;
+  font-weight: bold;
+}
+nav .wrapper .navBox .navItem:not(:last-child), nav .wrapper .navBox .loginItem:not(:last-child), nav .wrapper .loginBox .navItem:not(:last-child), nav .wrapper .loginBox .loginItem:not(:last-child) {
+  margin-right: 35px;
+}
+nav .wrapper .navBox .navItem a:hover, nav .wrapper .loginBox .navItem a:hover {
+  text-decoration: underline;
+}
+nav .wrapper .navBox .loginItem, nav .wrapper .loginBox .loginItem {
+  padding: 10px 20px;
+  border-radius: 50px;
+  background-color: #CFCFCF;
+  transition: 125ms;
+}
+nav .wrapper .navBox .loginItem.signUp, nav .wrapper .loginBox .loginItem.signUp {
+  background-color: #6AFFA0;
+}
+nav .wrapper .navBox .loginItem:hover, nav .wrapper .loginBox .loginItem:hover {
+  background-color: #EFEFEF;
+}
+
+#hero {
+  background-image: url(../images/skyline.jpg);
+  background-size: cover;
+  background-position: bottom 55% center;
+  height: 550px;
+}
+#hero .wrapper {
+  height: 450px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+#hero .hBox {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgba(100, 100, 100, 0.1);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+#hero h1 {
+  font-size: 48px;
+  font-weight: 600;
+}
+#hero h2 {
+  font-size: 30px;
+  font-weight: 300;
+}
+#hero .cta {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+#triad .wrapper {
+  margin-top: -150px;
+  display: flex;
+  justify-content: space-between;
+}
+#triad .triadBox {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 300px;
+  border-radius: 30px;
+  background-color: #EFEFEF;
+  padding: 20px;
+  justify-content: space-between;
+}
+#triad .triadBox .triadTextBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#triad .triadBox .triadTextBox :not(:last-child) {
+  margin-bottom: 15px;
+}
+#triad .triadBox .triadTextBox img {
+  width: 64px;
+  margin: 0 auto;
+}
+#triad .triadBox .triadTextBox h2 {
+  font-size: 24px;
+  text-align: center;
+}
+#triad .triadBox .triadTextBox p {
+  font-size: 14px;
+  text-align: center;
+}
+#triad .triadBox .cta {
+  margin: 0 auto;
+}
+
+#modernizing .wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#modernizing .wrapper:first-child {
+  margin-bottom: 35px;
+}
+#modernizing .wrapper .descBox {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+}
+#modernizing .wrapper .descBox h3, #modernizing .wrapper .descBox p {
+  margin-bottom: 20px;
+}
+#modernizing .wrapper .descBox p {
+  font-size: 14px;
+}
+#modernizing .wrapper img {
+  width: 450px;
+}
+
+#clientReviews .wrapper h3 {
+  margin-bottom: 20px;
+}
+#clientReviews .wrapper .reviewBox {
+  display: flex;
+  justify-content: space-between;
+}
+#clientReviews .wrapper .reviewBox .reviewItem {
+  display: flex;
+  flex-direction: column;
+  background-color: #EFEFEF;
+  padding: 10px;
+  border-radius: 15px;
+  width: 200px;
+  height: 225px;
+}
+#clientReviews .wrapper .reviewBox .reviewItem .profile {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  border-radius: 100%;
+}
+#clientReviews .wrapper .reviewBox .reviewItem .starBox {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto 10px auto;
+  display: flex;
+}
+#clientReviews .wrapper .reviewBox .reviewItem .starBox img {
+  width: 30px;
+  height: auto;
+}
+#clientReviews .wrapper .reviewBox .reviewItem .quote {
+  text-align: center;
+  font-style: italic;
+  font-size: 18px;
+  font-weight: 300;
+}/*# sourceMappingURL=default.css.map */

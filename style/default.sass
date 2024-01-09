@@ -1,0 +1,191 @@
+@import url(./montserrat.css)
+
+*
+  margin: 0
+  padding: 0
+  font-family: 'Montserrat'
+  box-sizing: border-box
+
+@mixin flexCol
+  display: flex
+  flex-direction: column
+
+// colors
+$card: #EFEFEF
+$cardB: #CFCFCF
+$cardDark: #2D2D2D
+$text: #000000
+$ctaButton: #0A0A0A
+$ctaText: #FFFFFF
+$white: #FFFFFF
+$black: #000000
+$brand: #6AFFA0
+
+a, a:active, a:visited
+  text-decoration: none
+  color: $text
+
+h2
+  font-size: 36px
+  font-weight: 600
+h3
+  font-size: 24px
+  font-weight: 300
+
+.cta, .cta:visited
+  padding: 10px 20px
+  background-color: $ctaButton
+  color: $ctaText
+  border-radius: 500px
+  display: block
+  transition: 125ms
+  font-weight: bold
+  text-align: center
+  width: fit-content
+  &:hover
+    color: $text
+    background-color: $cardB
+.wrapper
+  max-width: 1300px
+  margin: 0 auto
+
+section
+  margin-bottom: 50px
+
+nav
+  position: fixed
+  width: 100%
+  height: 60px
+  background-color: $white
+  z-index: 999
+  .wrapper
+    display: flex
+    justify-content: space-between
+    .navBox, .loginBox
+      display: flex
+      height: 60px
+      align-items: center
+      .navItem, .loginItem
+        font-size: 18px 
+        font-weight: bold
+        &:not(:last-child)
+          margin-right: 35px
+      .navItem  
+        a:hover
+          text-decoration: underline
+      .loginItem
+        padding: 10px 20px
+        border-radius: 50px
+        background-color: $cardB
+        transition: 125ms
+        &.signUp
+          background-color: $brand
+        &:hover
+          background-color: $card
+
+#hero
+  background-image: url(../images/skyline.jpg)
+  background-size: cover
+  background-position: bottom 55% center
+  height: 550px
+  .wrapper
+    height: 450px
+    justify-content: center
+    display: flex
+    flex-direction: column
+  .hBox
+    width: fit-content
+    margin-bottom: 20px
+    padding: 10px
+    border-radius: 10px
+    background-color: rgba(100, 100, 100, 0.1)
+    backdrop-filter: blur(10px)
+  h1
+    font-size: 48px
+    font-weight: 600
+  h2
+    font-size: 30px
+    font-weight: 300
+  .cta
+    font-size: 28px
+    font-weight: 600
+
+#triad
+  .wrapper
+    margin-top: -150px
+    display: flex
+    justify-content: space-between
+  .triadBox
+    @include flexCol
+    width: 350px
+    height: 300px
+    border-radius: 30px
+    background-color: $card
+    padding:  20px
+    justify-content: space-between
+    .triadTextBox
+      @include flexCol
+      justify-content: space-between
+      :not(:last-child)
+        margin-bottom: 15px
+      img
+        width: 64px
+        margin: 0 auto
+      h2
+        font-size: 24px
+        text-align: center
+      p
+        font-size: 14px
+        text-align: center
+    .cta
+      margin: 0 auto
+
+
+#modernizing
+  .wrapper
+    display: flex
+    justify-content: space-evenly
+    align-items: center
+    &:first-child
+      margin-bottom: 35px
+    .descBox
+      width: 450px
+      @include flexCol
+      h3, p
+        margin-bottom: 20px
+      p
+        font-size: 14px
+    img
+      width: 450px
+
+#clientReviews
+  .wrapper
+    h3
+      margin-bottom: 20px
+    .reviewBox
+      display: flex
+      justify-content: space-between
+      .reviewItem
+        @include flexCol
+        background-color: $card
+        padding: 10px
+        border-radius: 15px
+        width: 200px
+        height: 225px
+        .profile
+          width: 120px
+          height: 120px
+          margin: 0 auto
+          border-radius: 100%
+        .starBox
+          width: fit-content
+          margin: 0 auto 10px auto
+          display: flex
+          img
+            width: 30px
+            height: auto
+        .quote
+          text-align: center
+          font-style: italic
+          font-size: 18px
+          font-weight: 300
