@@ -33,6 +33,11 @@ h3 {
   width: -moz-fit-content;
   width: fit-content;
 }
+@media (max-width: 1300px) {
+  .cta, .cta:visited {
+    margin: 0 auto;
+  }
+}
 .cta:hover, .cta:visited:hover {
   color: #000000;
   background-color: #CFCFCF;
@@ -85,6 +90,11 @@ nav .wrapper .navBox .loginItem.signUp, nav .wrapper .loginBox .loginItem.signUp
 nav .wrapper .navBox .loginItem:hover, nav .wrapper .loginBox .loginItem:hover {
   background-color: #EFEFEF;
 }
+@media (max-width: 1300px) {
+  nav {
+    display: none;
+  }
+}
 
 #hero {
   background-image: url(../images/skyline.jpg);
@@ -102,11 +112,16 @@ nav .wrapper .navBox .loginItem:hover, nav .wrapper .loginBox .loginItem:hover {
   width: -moz-fit-content;
   width: fit-content;
   margin-bottom: 20px;
-  padding: 10px;
-  border-radius: 10px;
+  padding: 15px;
+  border-radius: 25px;
   background-color: rgba(100, 100, 100, 0.1);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
+}
+@media (max-width: 1300px) {
+  #hero .hBox {
+    width: 90%;
+  }
 }
 #hero h1 {
   font-size: 48px;
@@ -120,21 +135,53 @@ nav .wrapper .navBox .loginItem:hover, nav .wrapper .loginBox .loginItem:hover {
   font-size: 28px;
   font-weight: 600;
 }
+@media (max-width: 1300px) {
+  #hero .cta, #hero .hBox {
+    margin: 0 auto 20px auto;
+  }
+  #hero h1, #hero h2 {
+    text-align: center;
+  }
+}
 
 #triad .wrapper {
+  display: flex;
+  flex-direction: row;
   margin-top: -150px;
   display: flex;
   justify-content: space-between;
 }
+#triad .wrapper:first-child {
+  flex-direction: row-reverse;
+}
+@media (max-width: 1300px) {
+  #triad .wrapper {
+    flex-direction: column;
+  }
+  #triad .wrapper:first-child {
+    flex-direction: column;
+  }
+}
 #triad .triadBox {
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
   width: 350px;
   height: 300px;
   border-radius: 30px;
   background-color: #EFEFEF;
   padding: 20px;
   justify-content: space-between;
+}
+@media (max-width: 1300px) {
+  #triad .triadBox {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 1300px) {
+  #triad .triadBox {
+    width: 90%;
+  }
 }
 #triad .triadBox .triadTextBox {
   display: flex;
@@ -162,16 +209,40 @@ nav .wrapper .navBox .loginItem:hover, nav .wrapper .loginBox .loginItem:hover {
 
 #modernizing .wrapper {
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
-  align-items: center;
+}
+#modernizing .wrapper:first-child {
+  flex-direction: row-reverse;
+}
+@media (max-width: 1300px) {
+  #modernizing .wrapper {
+    flex-direction: column;
+  }
+  #modernizing .wrapper:first-child {
+    flex-direction: column;
+  }
 }
 #modernizing .wrapper:first-child {
   margin-bottom: 35px;
 }
+#modernizing .wrapper .descBox, #modernizing .wrapper img {
+  margin: 0 auto;
+}
 #modernizing .wrapper .descBox {
-  width: 450px;
   display: flex;
   flex-direction: column;
+  width: 450px;
+}
+@media (max-width: 1300px) {
+  #modernizing .wrapper .descBox {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 1300px) {
+  #modernizing .wrapper .descBox {
+    width: 90%;
+  }
 }
 #modernizing .wrapper .descBox h3, #modernizing .wrapper .descBox p {
   margin-bottom: 20px;
@@ -182,22 +253,48 @@ nav .wrapper .navBox .loginItem:hover, nav .wrapper .loginBox .loginItem:hover {
 #modernizing .wrapper img {
   width: 450px;
 }
+@media (max-width: 1300px) {
+  #modernizing .wrapper img {
+    width: 75%;
+  }
+}
 
+#clientReviews .wrapper h2, #clientReviews .wrapper h3 {
+  text-align: center;
+}
 #clientReviews .wrapper h3 {
   margin-bottom: 20px;
 }
 #clientReviews .wrapper .reviewBox {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+}
+#clientReviews .wrapper .reviewBox:first-child {
+  flex-direction: row-reverse;
+}
+@media (max-width: 1300px) {
+  #clientReviews .wrapper .reviewBox {
+    flex-direction: column;
+  }
+  #clientReviews .wrapper .reviewBox:first-child {
+    flex-direction: column;
+  }
 }
 #clientReviews .wrapper .reviewBox .reviewItem {
   display: flex;
   flex-direction: column;
   background-color: #EFEFEF;
+  margin: 0 auto;
   padding: 10px;
   border-radius: 15px;
   width: 200px;
   height: 225px;
+}
+@media (max-width: 1300px) {
+  #clientReviews .wrapper .reviewBox .reviewItem {
+    margin-bottom: 50px;
+  }
 }
 #clientReviews .wrapper .reviewBox .reviewItem .profile {
   width: 120px;
