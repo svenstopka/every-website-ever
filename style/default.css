@@ -11,6 +11,12 @@ a, a:active, a:visited {
   color: #000000;
 }
 
+@media (max-width: 1300px) {
+  h2, h3 {
+    text-align: center;
+  }
+}
+
 h2 {
   font-size: 36px;
   font-weight: 600;
