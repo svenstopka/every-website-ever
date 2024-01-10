@@ -1,15 +1,13 @@
 @import url(./montserrat.css)
 
+// normalize stuff
 *
   margin: 0
   padding: 0
   font-family: 'Montserrat'
   box-sizing: border-box
 
-@mixin flexCol
-  display: flex
-  flex-direction: column
-
+// Variables
 // colors
 $card: #EFEFEF
 $cardB: #CFCFCF
@@ -20,9 +18,10 @@ $ctaText: #FFFFFF
 $white: #FFFFFF
 $black: #000000
 $brand: #6AFFA0
-
+// breakpoints
 $breakpoint-mobile: 1300px
 
+// Mixins
 @mixin mobileBottom
   @media (max-width: $breakpoint-mobile)
     margin-bottom: 50px
@@ -45,6 +44,11 @@ $breakpoint-mobile: 1300px
   @media (max-width: $breakpoint-mobile)
     width: 90%
 
+@mixin flexCol
+  display: flex
+  flex-direction: column
+
+// General Tags
 a, a:active, a:visited
   text-decoration: none
   color: $text
@@ -52,9 +56,11 @@ a, a:active, a:visited
 h2, h3
   @media (max-width: $breakpoint-mobile)
     text-align: center
+
 h2
   font-size: 36px
   font-weight: 600
+
 h3
   font-size: 24px
   font-weight: 300
@@ -81,6 +87,7 @@ h3
 section
   margin-bottom: 50px
 
+// Section specific
 nav
   position: fixed
   width: 100%
