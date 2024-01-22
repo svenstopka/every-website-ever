@@ -4,7 +4,7 @@ Diese Website wurde hauptsächlich aus Langeweile und als meine komische art von
 
 Sass wurde benutzt weil ich extrem faul bin.
 
-![alt text](screenshot.png)
+![Screenshot](screenshot.png)
 
 ## Quellenangabe:
 
